@@ -77,6 +77,18 @@
   # Docker Setup
   virtualisation.docker.enable = true;
 
+  # dns
+  services.dnsmasq = {
+  enable = true;
+  settings = {
+    address = "/docker.local/192.168.1.61";
+    listen-address = "127.0.0.1,192.168.1.61";
+    domain-needed = true;
+    bogus-priv = true;
+    no-resolv = false;
+  };
+};
+
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
