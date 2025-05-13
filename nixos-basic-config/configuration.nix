@@ -53,6 +53,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
   #  wget
+  docker-compose
   ];
 
   # Enable the OpenSSH daemon.
