@@ -24,7 +24,7 @@
       fsType = "ext4";
     };
 
-# hdde
+# hdd
   fileSystems."/mnt/hdd" =
     { device = "/dev/disk/by-uuid/0c821c31-8456-4614-85b3-fe7dae18f61b";
       fsType = "ext4";
