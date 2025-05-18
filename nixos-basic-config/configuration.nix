@@ -60,8 +60,8 @@
   services.openssh.enable = true;
 
   # FIREWALL
-  networking.firewall.allowedTCPPorts = [ 9443 80 81 443 53 3000 ];
-  networking.firewall.allowedUDPPorts = [ 9443 80 81 443 53 3000 ];
+  networking.firewall.allowedTCPPorts = [ 9443 80 81 443 53 3000 6881 ];
+  networking.firewall.allowedUDPPorts = [ 9443 80 81 443 53 3000 6881 ];
 
   system.stateVersion = "24.11";
 # BASICS END
